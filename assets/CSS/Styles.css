@@ -1,0 +1,115 @@
+:root{
+    --primary-color: #576F72;
+    --secondary-color: #E4DCCF;
+    --accent-color: #7D9D9C;
+    --accent2-color: #F0EBE3;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: var(--primary-color);
+    padding: 1.2em;
+    min-width: 100%;
+}
+
+.description{
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.logo{
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+.back-link{
+    background-color: var(--accent2-color);
+    color: #000;
+}
+
+.back-link:hover{
+    background-color: var(--accent-color);
+    color: #000;
+}
+
+.content-form{
+    text-align: center;
+    align-items: center;
+}
+
+.box-background{
+    background-color: var(--secondary-color);
+}
+
+.form-title{
+    color: var(--secondary-color);
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.box-accent{
+    background-color: var(--accent-color);
+}
+
+.light-header{
+    color: var(--secondary-color);
+}
+
+.dark-header{
+    color: var(--primary-color);
+}
+
+.album-art-titles{
+    color: var(--accent2-color);
+}
+
+.f-icon{
+    font-size: 2rem;
+}
+
+.f-icon:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.footer-push{
+    margin-bottom: 15rem;
+}
+#cover_art{
+   
+  }
+  #song-card-container{
+    display:flex;
+    flex-wrap: wrap;
+    
+  }
+  .song-card{
+    max-width: 400px;
+    flex: 0 0 33.3333333%;
+    margin: 5px;
+    
+    padding: 10px 0;
+    border: 1px solid black;
+    border-radius: 10%;
+  }
+
+.song-card:hover {
+    opacity: .5;
+}
+
+@media screen and (max-width: 595px){
+    .box-media{
+        max-width: 458px;
+    }
+}
+    

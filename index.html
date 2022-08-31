@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/CSS/Styles.css" />
+    <title>Step2Rythym</title>
+  </head>
+
+  <body>
+    <header class="container header">
+      <h1 class="logo">Step2Rhythm</h1>
+      <div class="navbar-end">
+        <div class="content content-form container">
+          <form id="search-form">
+            <legend class="form-title">Expand your music repertoire <i class="fa-solid fa-icons"></i></legend>
+            <input name="Artist" id="searchArtist" class="input" type="text" placeholder="Artist Name"/>
+            <br>
+            <br>
+            <input type="text" name="songInput" class="input" id="searchSong" placeholder="Song Name">
+            <br><br>
+            <button id="create-search" class="button is-success is-responsive is-focused" type="submit" data-toggle="modal" data-target="#task-form-modal">
+              Search
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- container for artist name, song title, and album art -->
+    <section class="section has-text-centered">
+      <div class=" container is-mobile">
+        <div class="box box-accent album-art-titles box-media">
+          <p class="title light-header" id="artist-name">Artist Name</p>
+          <p class="subtitle light-header" id="song-header">Song Title</p>
+          <figure class="image is-1by1">
+            <img id ="cover_art" src="./assets/images/step2ryhthm.jpg">
+          </figure>
+        </div>
+      </div>
+    </section>
+    
+    <!--container for song lyrics and related artists-->
+    <div class="container is-widescreen">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child notification box-background dark-header">
+          <p class="title has-text-centered">Song Lyrics</p>
+          <button id="lyrics" class="column is-half is-offset-one-quarter button is-large is-rounded is-success is-responsive is-focused" type="button">Get Lyrics <i class="fa-solid fa-guitar"></i></button>
+        </article>
+        <article class="tile is-child notification box-accent light-header">
+          <p class="title has-text-centered">Related Songs</p>
+          <div class="has-text-centered comlums" id="song-card-container">
+          </div>
+        </article>
+        <article class="tile is-child notification box-accent light-header">
+          <p class="title has-text-centered">Related News Articles</p>
+          <div class="has-text-centered comlums" id="article-card-container">
+          </div>
+        </article>
+      </div>
+
+    <!-- footer with icon link -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Step2Rythym</strong> by <a href="https://github.com/JayWhiteBuffalo">Tyler Mason</a>, <a href="https://github.com/PhuongHoang68">Phuong Hoang</a>, and <a href="https://github.com/stephen-kern">Stephen Kern</a>.
+          </p>
+          <button class="button">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>GitHub</span>
+          </button>
+        </div>
+      </footer>
+      
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/java/script.js"></script>
+    <script src="./assets/java/news.js"></script>
+  </body>
+</html>
+
